@@ -68,7 +68,7 @@ public sealed class TestScript : Component
 
 		for ( int i = 0; i < size; i++ )
 		{
-			heightmapDataRaw[i] = (ushort)new Random().Int(1024);
+			heightmapDataRaw[i] = (ushort)new Random().Int(180);
 		}
 
 		return heightmapDataRaw;
