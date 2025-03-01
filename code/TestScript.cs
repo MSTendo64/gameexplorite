@@ -11,43 +11,48 @@ public sealed class TestScript : Component
 	private TypeDescription typeDescription;
 	private int HMSize;
 
+	private ushort[] hmData;
+
 	[Property] List<TerrainMaterial> NewTerrMat;
 
-	protected override void OnStart()
+    protected override void OnAwake()
     {
-
 		if ( FileSystem.Mounted.FileExists( "4x4-mountains.raw" ) )
 		{
 			byte[] heightmapData = FileSystem.Mounted.ReadAllBytes( "4x4-mountains.raw" ).ToArray();
 			HMSize = heightmapData.Length;
 			logger.Info( $"Loaded heightmap with {heightmapData.Length} bytes." );
 
-			//GameObject terrain = new GameObject();
-			//terrain.Name = "Terrain";
-			Terrain terrainComp = this.GetComponent<Terrain>();
+			hmData = GenerateHeightMap( heightmapData.Length );
 
-			ushort[] hmData = GenerateHeightMap( heightmapData.Length );
+			Terrain terrainComp = this.GetComponent<Terrain>();
 
 			try
 			{
-				logger.Info( hmData[new Random().Int( hmData.Length )] );
-
 				terrainComp.Storage.HeightMap = hmData;
 			}
-			catch ( Exception ex ) 
-			{ 
+			catch ( Exception ex )
+			{
 				logger.Info( ex );
 			}
-			
+
 		}
 		else
 		{
 			logger.Warning( "Heightmap file not found in Mounted FileSystem." );
-		}		
+		}
+
+	}
+
+    protected override void OnStart()
+    {
+		
+			
     }
 
     protected override void OnUpdate()
 	{
+
 	}
 
 	private ushort[] ByteToUshortArray( byte[] byteAray)
