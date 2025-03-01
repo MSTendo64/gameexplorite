@@ -30,7 +30,7 @@ public sealed class TreeSpanwer : Component
 
 				TreesPosiotions[i] = new Vector3( new Random().Int( terrainSize / 2 ), new Random().Int( terrainSize / 2 ), 46 );
 
-				logger.Info( $"Tree spawned on: {TreesPosiotions[i]}" );
+				//logger.Info( $"Tree spawned on: {TreesPosiotions[i]}" );
 
 				nextTree.Transform.Position = TreesPosiotions[i];
 			}
