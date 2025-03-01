@@ -356,6 +356,54 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "9cdde1c6-37bb-4d03-a28c-9cc14c837053",
+      "Flags": 0,
+      "Name": "Terrain Generator",
+      "Position": "0,-197.7976,-267.9841",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "TestScript",
+          "__guid": "26f4b4d2-35a3-4abd-8297-4bde232fd441",
+          "NewTerrMat": [],
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.Terrain",
+          "__guid": "45fa6d27-b3d9-4827-8c8f-367208513bd2",
+          "__version": 1,
+          "ClipMapLodExtentTexels": 256,
+          "ClipMapLodLevels": 6,
+          "EnableCollision": true,
+          "Friction": null,
+          "IsTrigger": false,
+          "MaterialOverride": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "Off",
+          "Static": true,
+          "Storage": "test.terrain",
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0",
+          "TerrainHeight": 10000,
+          "TerrainSize": 79872
+        }
+      ]
     }
   ],
   "SceneProperties": {
