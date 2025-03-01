@@ -5,7 +5,6 @@
       "__guid": "b6c04b57-1817-4df4-888e-b6a884fc880f",
       "Flags": 0,
       "Name": "Cube",
-      "Position": "-0.0000003646546,516.9941,61.08025",
       "Enabled": true,
       "Components": [
         {
@@ -30,6 +29,27 @@
           },
           "RenderType": "On",
           "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "02f0be80-8312-4f60-b609-42046c764985",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
         }
       ]
     },
@@ -37,8 +57,8 @@
       "__guid": "59d6d788-eed9-46d2-9548-a66ae4548049",
       "Flags": 0,
       "Name": "Sun",
-      "Position": "230.6151,-69.75599,11.26122",
-      "Rotation": "0.05707911,0.1537867,0.357704,0.9193146",
+      "Position": "3978.096,-11.00696,10968.91",
+      "Rotation": "0.1740646,0.4697951,0.7003591,0.5084202",
       "Tags": "light_directional,light",
       "Enabled": true,
       "Components": [
@@ -63,7 +83,7 @@
       "__guid": "12f949db-45f5-47bf-a570-15fa5d0d6947",
       "Flags": 0,
       "Name": "Camera",
-      "Position": "-232.1841,0,0",
+      "Position": "132.4491,70.96344,130.0351",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
@@ -94,47 +114,10 @@
       ]
     },
     {
-      "__guid": "569ca4b1-9c09-4b13-b1e7-66bc57ac9333",
-      "Flags": 0,
-      "Name": "Terrain",
-      "Position": "-2252.494,-2399.002,20.16115",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Terrain",
-          "__guid": "627538a9-6f75-402c-8d9a-03a99ac666db",
-          "__version": 1,
-          "ClipMapLodExtentTexels": 256,
-          "ClipMapLodLevels": 6,
-          "EnableCollision": true,
-          "Friction": null,
-          "IsTrigger": false,
-          "MaterialOverride": null,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "RenderType": "Off",
-          "Static": true,
-          "Storage": "test.terrain",
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0",
-          "TerrainHeight": 10000,
-          "TerrainSize": 20000
-        }
-      ]
-    },
-    {
       "__guid": "d9b61d61-f12d-4303-aa61-218891aa690f",
       "Flags": 0,
-      "Name": "Player Controller 1",
-      "Position": "-335.8293,332.9534,135.3942",
+      "Name": "Player Controller",
+      "Position": "0,0,32.4802",
       "Enabled": true,
       "Components": [
         {
@@ -371,6 +354,52 @@
               "SurfaceVelocity": "0,0,0"
             }
           ]
+        }
+      ]
+    },
+    {
+      "__guid": "9cdde1c6-37bb-4d03-a28c-9cc14c837053",
+      "Flags": 0,
+      "Name": "Terrain Generator",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Terrain",
+          "__guid": "be6076b3-9dae-4022-8cbb-156e3ee3061a",
+          "__version": 1,
+          "ClipMapLodExtentTexels": 256,
+          "ClipMapLodLevels": 6,
+          "EnableCollision": true,
+          "Friction": null,
+          "IsTrigger": false,
+          "MaterialOverride": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "Off",
+          "Static": true,
+          "Storage": "test.terrain",
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0",
+          "TerrainHeight": 10000,
+          "TerrainSize": 159744
+        },
+        {
+          "__type": "TestScript",
+          "__guid": "26f4b4d2-35a3-4abd-8297-4bde232fd441",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     }
