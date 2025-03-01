@@ -131,15 +131,15 @@
       ]
     },
     {
-      "__guid": "71c46735-6f53-4a81-994a-f615f2300bfa",
+      "__guid": "d9b61d61-f12d-4303-aa61-218891aa690f",
       "Flags": 0,
-      "Name": "player",
-      "Position": "-2769.554,2544.404,1220.074",
+      "Name": "Player Controller 1",
+      "Position": "-335.8293,332.9534,135.3942",
       "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.PlayerController",
-          "__guid": "ee324b51-201d-4faf-bd49-f9fb75a7787c",
+          "__guid": "45c31775-ea85-427d-b85f-becab6e253b2",
           "AccelerationTime": 0,
           "AimStrengthBody": 1,
           "AimStrengthEyes": 1,
@@ -147,8 +147,8 @@
           "AltMoveButton": "run",
           "Body": {
             "_type": "component",
-            "component_id": "23aa425b-cd7e-4e63-a11b-06e98af59efa",
-            "go": "71c46735-6f53-4a81-994a-f615f2300bfa",
+            "component_id": "3a4aa290-abd2-4e4d-b7b3-48d535873e41",
+            "go": "d9b61d61-f12d-4303-aa61-218891aa690f",
             "component_type": "Rigidbody"
           },
           "BodyCollisionTags": null,
@@ -159,7 +159,7 @@
           "CameraOffset": "256,0,12",
           "ColliderObject": {
             "_type": "gameobject",
-            "go": "19294f8a-f26c-426d-b7c3-d18a6cce8f8d"
+            "go": "2f64c8e9-cc84-4a31-a3c2-b9317e6befab"
           },
           "DeaccelerationTime": 0,
           "DuckedHeight": 36,
@@ -185,8 +185,8 @@
           "ReachLength": 130,
           "Renderer": {
             "_type": "component",
-            "component_id": "6a25d422-4abb-470d-9086-1d2b26213d06",
-            "go": "7aabbc8b-d48e-4dc9-bfee-e48e6587e42d",
+            "component_id": "007b9668-59c7-408c-8d0f-32ac3930792c",
+            "go": "94115569-c38b-4ca6-a021-08a02e148be5",
             "component_type": "SkinnedModelRenderer"
           },
           "RotateWithGround": true,
@@ -208,7 +208,7 @@
         },
         {
           "__type": "Sandbox.Rigidbody",
-          "__guid": "23aa425b-cd7e-4e63-a11b-06e98af59efa",
+          "__guid": "3a4aa290-abd2-4e4d-b7b3-48d535873e41",
           "AngularDamping": 1,
           "Gravity": true,
           "LinearDamping": 0.1,
@@ -235,7 +235,7 @@
         },
         {
           "__type": "Sandbox.Movement.MoveModeWalk",
-          "__guid": "ad7125d8-22f4-494b-94fc-f7051d5d24cd",
+          "__guid": "d1714b2f-b554-428e-9c56-8e0ee38ec824",
           "GroundAngle": 45,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -249,7 +249,7 @@
         },
         {
           "__type": "Sandbox.Movement.MoveModeSwim",
-          "__guid": "06054459-7dd7-4b53-984e-fc1491475d50",
+          "__guid": "efafabf2-0318-458c-9c46-05821d86b4ac",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -261,7 +261,7 @@
         },
         {
           "__type": "Sandbox.Movement.MoveModeLadder",
-          "__guid": "dfa65aba-848f-44e7-b819-8a33c405e09e",
+          "__guid": "45a65ba0-b7c2-4d36-8288-e26822db3a63",
           "ClimbableTags": "ladder",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -275,14 +275,14 @@
       ],
       "Children": [
         {
-          "__guid": "7aabbc8b-d48e-4dc9-bfee-e48e6587e42d",
+          "__guid": "94115569-c38b-4ca6-a021-08a02e148be5",
           "Flags": 0,
           "Name": "Body",
           "Enabled": true,
           "Components": [
             {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "6a25d422-4abb-470d-9086-1d2b26213d06",
+              "__guid": "007b9668-59c7-408c-8d0f-32ac3930792c",
               "AnimationGraph": null,
               "BodyGroups": 341,
               "BoneMergeTarget": null,
@@ -322,14 +322,14 @@
           ]
         },
         {
-          "__guid": "19294f8a-f26c-426d-b7c3-d18a6cce8f8d",
+          "__guid": "2f64c8e9-cc84-4a31-a3c2-b9317e6befab",
           "Flags": 1,
           "Name": "Colliders",
           "Enabled": true,
           "Components": [
             {
               "__type": "Sandbox.CapsuleCollider",
-              "__guid": "50d283ec-e5da-45a4-a133-cf0cd6507df7",
+              "__guid": "83645509-a0e6-40e3-a94a-565f5e328447",
               "End": "0,0,45.05097",
               "Friction": 0,
               "IsTrigger": false,
@@ -351,7 +351,7 @@
             },
             {
               "__type": "Sandbox.BoxCollider",
-              "__guid": "976b7b3a-fc59-4621-9306-79bea86a02e1",
+              "__guid": "9594e58f-f39a-4071-bd82-ec6893bc36f7",
               "Center": "0,0,18",
               "Friction": 0,
               "IsTrigger": false,
