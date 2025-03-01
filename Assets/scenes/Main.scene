@@ -5,6 +5,7 @@
       "__guid": "b6c04b57-1817-4df4-888e-b6a884fc880f",
       "Flags": 0,
       "Name": "Cube",
+      "Position": "-0.0000003646546,516.9941,61.08025",
       "Enabled": true,
       "Components": [
         {
@@ -62,7 +63,7 @@
       "__guid": "12f949db-45f5-47bf-a570-15fa5d0d6947",
       "Flags": 0,
       "Name": "Camera",
-      "Position": "-126.6818,-8.173701,-2.85822",
+      "Position": "-232.1841,0,0",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
@@ -89,6 +90,43 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "a75255bb-91b6-48ca-844c-3e25078261b7",
+      "Flags": 0,
+      "Name": "Terrain",
+      "Position": "-107.7857,70.05566,20.18267",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Terrain",
+          "__guid": "d2c49e0f-b364-47ad-ad22-37149eefeaea",
+          "__version": 1,
+          "ClipMapLodExtentTexels": 256,
+          "ClipMapLodLevels": 6,
+          "EnableCollision": true,
+          "Friction": null,
+          "IsTrigger": false,
+          "MaterialOverride": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "Off",
+          "Static": true,
+          "Storage": "test.terrain",
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0",
+          "TerrainHeight": 10000,
+          "TerrainSize": 20000
         }
       ]
     }
