@@ -94,15 +94,15 @@
       ]
     },
     {
-      "__guid": "a75255bb-91b6-48ca-844c-3e25078261b7",
+      "__guid": "569ca4b1-9c09-4b13-b1e7-66bc57ac9333",
       "Flags": 0,
       "Name": "Terrain",
-      "Position": "-107.7857,70.05566,20.18267",
+      "Position": "-450.8384,69.98262,20.16115",
       "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.Terrain",
-          "__guid": "d2c49e0f-b364-47ad-ad22-37149eefeaea",
+          "__guid": "627538a9-6f75-402c-8d9a-03a99ac666db",
           "__version": 1,
           "ClipMapLodExtentTexels": 256,
           "ClipMapLodLevels": 6,

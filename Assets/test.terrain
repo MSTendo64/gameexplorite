@@ -8,7 +8,7 @@
   "TerrainSize": 20000,
   "TerrainHeight": 10000,
   "Materials": [
-    "materials/forest_ground_sticks.tmat"
+    "terrain/materials/ground037.tmat"
   ],
   "MaterialSettings": {
     "HeightBlendEnabled": true,
@@ -16,7 +16,7 @@
   },
   "ResourceVersion": 1,
   "__references": [
-    "duccsoft.forest_sticks_tmat#60687"
+    "garry.ground037#59704"
   ],
   "__version": 1
 }
