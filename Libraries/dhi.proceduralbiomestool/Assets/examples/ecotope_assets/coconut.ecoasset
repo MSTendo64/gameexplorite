@@ -1,0 +1,13 @@
+{
+  "Models": [
+    "vox/coconut/coconut_fbx.vmdl"
+  ],
+  "Viability": 1,
+  "FootprintRadius": 17.199991,
+  "CollisionRadius": 3.8,
+  "Jitter": 188.79994,
+  "__references": [
+    "viwi.coconut#74187"
+  ],
+  "__version": 0
+}

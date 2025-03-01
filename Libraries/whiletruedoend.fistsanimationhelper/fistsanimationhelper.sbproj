@@ -1,0 +1,15 @@
+{
+  "Title": "Fists Animation Helper",
+  "Type": "library",
+  "Org": "whiletruedoend",
+  "Ident": "fistsanimationhelper",
+  "Schema": 1,
+  "IncludeSourceFiles": true,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "IsWhitelistDisabled": false,
+  "Metadata": {
+    "CsProjName": ""
+  }
+}

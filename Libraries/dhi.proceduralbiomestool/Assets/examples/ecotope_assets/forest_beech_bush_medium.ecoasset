@@ -1,0 +1,28 @@
+{
+  "Model": "models/sbox_props/shrubs/beech/beech_bush_medium.vmdl",
+  "Models": [
+    "models/sbox_props/shrubs/beech/beech_bush_medium.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 1,
+  "Jitter": 50,
+  "FootprintRadius": 70.20001,
+  "CollisionRadius": 38.900005,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "__references": [],
+  "__version": 0
+}

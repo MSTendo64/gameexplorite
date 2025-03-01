@@ -1,0 +1,33 @@
+{
+  "Models": [
+    "models/sbox_props/nature/ground_clover/ground_clover_a.vmdl",
+    "models/sbox_props/nature/ground_clover/ground_clover_b.vmdl",
+    "models/sbox_props/nature/ground_clover/ground_clover_c.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 2,
+  "Jitter": 53.399998,
+  "FootprintRadius": 24.900003,
+  "CollisionRadius": 18.999998,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "__references": [
+    "facepunch.ground_clover_a#28850",
+    "facepunch.ground_clover_b#28851",
+    "facepunch.ground_clover_c#28852"
+  ],
+  "__version": 0
+}

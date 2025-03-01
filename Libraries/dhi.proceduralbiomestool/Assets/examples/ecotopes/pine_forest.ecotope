@@ -1,0 +1,110 @@
+{
+  "VisualizationColor": "0,0.26047,0.05643,1",
+  "Density": 1,
+  "Layers": [
+    {
+      "LayerName": "Trees \u0026 Bushes",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/pine_tree.ecoasset",
+          "Density": 1
+        },
+        {
+          "Asset": "examples/ecotope_assets/forest_pine_bush.ecoasset",
+          "Density": 0.5
+        }
+      ],
+      "Rules": {
+        "count": 8,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 1,\r\n  \u0022Guid\u0022: \u0022f271a948-c5ea-4584-af0d-7165647b4594\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 32.07,\r\n  \u0022Guid\u0022: \u00224a0969ba-a955-4323-9b7d-edbaaedd2bdd\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 0,\r\n  \u0022MaxAngleInfluence\u0022: 0.31,\r\n  \u0022Guid\u0022: \u002200a26c47-1d44-4758-b2df-3a5d112cbd65\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u00229150c264-2736-42ee-95dc-6608f887dbb5\u0022\r\n}"
+          },
+          {
+            "type": "ApplyNoiseScaleLayerRule",
+            "data": "{\r\n  \u0022ScaleRange\u0022: \u00220.8 1.2\u0022,\r\n  \u0022NoiseFrequency\u0022: 0.05,\r\n  \u0022NoisePower\u0022: 1,\r\n  \u0022Guid\u0022: \u00220c62c322-7a4e-43ea-ab6f-ff1545e2d47d\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsUnderCeilingsLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u0022cbfa3295-40f2-472e-8c5e-c3f0b8c489e7\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u002291e7068f-2116-419f-a5a2-8093e776a831\u0022\r\n}"
+          },
+          {
+            "type": "ApplyNoiseTintLayerRule",
+            "data": "{\r\n  \u0022Tint\u0022: {\r\n    \u0022blend\u0022: \u0022Linear\u0022,\r\n    \u0022color\u0022: [\r\n      {\r\n        \u0022t\u0022: 0,\r\n        \u0022c\u0022: \u00220,0.30698,0.05116,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 1,\r\n        \u0022c\u0022: \u00221,1,1,1\u0022\r\n      }\r\n    ],\r\n    \u0022alpha\u0022: [\r\n      {\r\n        \u0022t\u0022: 0,\r\n        \u0022a\u0022: 1\r\n      },\r\n      {\r\n        \u0022t\u0022: 1,\r\n        \u0022a\u0022: 1\r\n      },\r\n      {\r\n        \u0022t\u0022: 1,\r\n        \u0022a\u0022: 1\r\n      }\r\n    ]\r\n  },\r\n  \u0022NoiseFrequency\u0022: 0.05,\r\n  \u0022NoisePower\u0022: 1,\r\n  \u0022Guid\u0022: \u0022238339df-ff1e-42fe-88ac-df39cc2ecf3e\u0022\r\n}"
+          }
+        ]
+      }
+    },
+    {
+      "LayerName": "Grass",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/field_grass.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 5,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 1,\r\n  \u0022Guid\u0022: \u00227b6effd2-7647-4b79-80c7-7c4c40f454de\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 43.92,\r\n  \u0022Guid\u0022: \u0022aa7191f9-daca-45cc-81c5-82549d7f182c\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 1,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u0022b8a99bdc-0f80-42ca-9637-150d1d45919a\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u00228680604c-6fdc-4e13-b36a-e828d62c9b01\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u002206801c43-0eda-455f-8c0b-29d74de936d1\u0022\r\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "count": 3,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u00225db82593-24c4-441c-9b31-bb97bceb9be1\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u002242ba73cf-0a38-4880-9ec0-c9203564f409\u0022\r\n}"
+      },
+      {
+        "type": "ApplyTagsGlobalRule",
+        "data": "{\r\n  \u0022Tags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u002290129e8e-482e-4afd-a9e4-772d13833206\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

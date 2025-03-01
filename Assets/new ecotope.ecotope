@@ -1,0 +1,25 @@
+{
+  "VisualizationColor": "1,0,0,1",
+  "Density": 1,
+  "Layers": [],
+  "Rules": {
+    "count": 3,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u0022d95d9606-3d51-4c51-b1f1-b803ac5dad8a\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u0022c37ceac7-a151-4e82-b502-3bea5393c97c\u0022\r\n}"
+      },
+      {
+        "type": "ApplyTagsGlobalRule",
+        "data": "{\r\n  \u0022Tags\u0022: \u0022\u0022,\r\n  \u0022Guid\u0022: \u0022c48e86f1-83b1-4df8-9141-21dbfd096a10\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

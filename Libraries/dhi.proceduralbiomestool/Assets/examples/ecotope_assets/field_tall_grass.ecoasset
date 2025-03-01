@@ -1,0 +1,33 @@
+{
+  "Models": [
+    "models/sbox_props/nature/tallgrass/tallgrass_a.vmdl",
+    "models/sbox_props/nature/tallgrass/tallgrass_b.vmdl",
+    "models/sbox_props/nature/tallgrass/tallgrass_c.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 1,
+  "Jitter": 21.600002,
+  "FootprintRadius": 15.599997,
+  "CollisionRadius": 13.6,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "__references": [
+    "facepunch.tallgrass_a#29065",
+    "facepunch.tallgrass_b#29066",
+    "facepunch.tallgrass_c#29067"
+  ],
+  "__version": 0
+}

@@ -1,0 +1,13 @@
+{
+  "Title": "Procedural Biomes Tool",
+  "Type": "library",
+  "Org": "dhi",
+  "Ident": "proceduralbiomestool",
+  "Schema": 1,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "IsWhitelistDisabled": false,
+  "Metadata": {}
+}

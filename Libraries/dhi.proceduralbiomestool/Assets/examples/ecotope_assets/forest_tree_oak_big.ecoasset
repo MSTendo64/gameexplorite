@@ -1,0 +1,32 @@
+{
+  "Models": [
+    "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+    "models/sbox_props/trees/oak/tree_oak_big_b.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 5,
+  "Jitter": 300,
+  "FootprintRadius": 640,
+  "CollisionRadius": 89.399956,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0.034188036,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "0.49767,0.49767,0.49767,1"
+      }
+    ],
+    "alpha": null
+  },
+  "MaximumTerrainAngle": 30,
+  "__references": [
+    "facepunch.tree_oak_big_a#38050",
+    "facepunch.tree_oak_big_b#33691"
+  ],
+  "__version": 0
+}

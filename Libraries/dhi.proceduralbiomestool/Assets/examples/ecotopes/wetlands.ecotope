@@ -1,0 +1,98 @@
+{
+  "VisualizationColor": "0,0.45,1,1",
+  "Density": 1,
+  "Layers": [
+    {
+      "LayerName": "Rocks",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/mossy_rock.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 6,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 0.22,\r\n  \u0022Guid\u0022: \u00229498c0d2-c8b5-4a00-ab24-ae4a75315ef8\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 40,\r\n  \u0022Guid\u0022: \u002257a014db-fb95-4ca1-b9d5-6e5b67fc8a61\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 1,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u00229e6d02de-752f-4ede-9103-5954ea2a55aa\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u00220d627aee-c4a0-4018-982b-893a63ed3ad8\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u00227c56569c-5243-4dfd-9661-98c3bb49ee81\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsBelowHeightLayerRule",
+            "data": "{\r\n  \u0022Height\u0022: 940,\r\n  \u0022Guid\u0022: \u00222a48318e-b2ee-4642-8ac1-258ab9c2ec11\u0022\r\n}"
+          }
+        ]
+      }
+    },
+    {
+      "LayerName": "Tall Grass",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/field_tall_grass.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 6,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 0.27,\r\n  \u0022Guid\u0022: \u0022f475b704-2de0-4c14-8047-ce79722afc35\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 40,\r\n  \u0022Guid\u0022: \u0022d755fd99-b66d-4eec-864e-b6e8e1ab614a\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 1,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u002209ce993c-6933-4578-abdc-80d396d2d201\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u00220b21f41c-5c4e-4116-84c4-c78edfc3dc8d\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u002294a302c2-385a-4199-b175-dc8bb97ecdec\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsBelowHeightLayerRule",
+            "data": "{\r\n  \u0022Height\u0022: 940,\r\n  \u0022Guid\u0022: \u0022a66de29d-93cd-47f0-9648-a465c038563d\u0022\r\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "count": 2,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u0022685b5e31-bafa-4eae-a54a-87d8ff082440\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u0022ea6b6662-7677-4b38-b967-513e97d48b81\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

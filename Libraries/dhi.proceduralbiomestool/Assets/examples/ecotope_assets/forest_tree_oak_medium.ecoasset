@@ -1,0 +1,31 @@
+{
+  "Models": [
+    "models/sbox_props/trees/oak/tree_oak_medium_a.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 3,
+  "Jitter": 150,
+  "FootprintRadius": 350,
+  "CollisionRadius": 52.7,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0.021367522,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 0.97008544,
+        "c": "0.72093,0.72093,0.72093,1"
+      }
+    ],
+    "alpha": null
+  },
+  "MaximumTerrainGenerationAngle": 90,
+  "TerrainAngleInfluenceRange": "0.3 0.5",
+  "__references": [
+    "facepunch.tree_oak_medium_a#33692"
+  ],
+  "__version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "Models": [
+    "models/props/dirt_pile/dirt_pile_03.vmdl",
+    "models/props/dirt_pile/dirt_pile_04.vmdl",
+    "models/props/dirt_pile/dirt_pile_02.vmdl"
+  ],
+  "Viability": 1,
+  "Jitter": 56.999996,
+  "FootprintRadius": 40.6,
+  "CollisionRadius": 15.799994,
+  "__references": [
+    "facepunch.dirtpile_02#37646",
+    "facepunch.dirtpile_03#37647",
+    "facepunch.dirtpile_04#37648"
+  ],
+  "__version": 0
+}

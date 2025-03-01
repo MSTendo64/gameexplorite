@@ -1,0 +1,21 @@
+{
+  "Models": [
+    "models/props/trash_pile_c/trash_pile_c_05.vmdl",
+    "models/props/trash_pile_c/trash_pile_c_04.vmdl",
+    "models/props/trash_pile_c/trash_pile_c_03.vmdl",
+    "models/props/trash_pile_c/trash_pile_c_01.vmdl",
+    "models/props/trash_pile_c/trash_pile_c_02.vmdl"
+  ],
+  "Viability": 1,
+  "Jitter": 88.70002,
+  "FootprintRadius": 40.79999,
+  "CollisionRadius": 28.900002,
+  "__references": [
+    "facepunch.trash_pile_c_01#37371",
+    "facepunch.trash_pile_c_02#37372",
+    "facepunch.trash_pile_c_03#37373",
+    "facepunch.trash_pile_c_04#37374",
+    "facepunch.trash_pile_c_05#37530"
+  ],
+  "__version": 0
+}

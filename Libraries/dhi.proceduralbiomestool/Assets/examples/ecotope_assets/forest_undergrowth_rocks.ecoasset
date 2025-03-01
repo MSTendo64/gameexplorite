@@ -1,0 +1,35 @@
+{
+  "Models": [
+    "models/props/rock_scatter/rock_scatter_pile_01.vmdl",
+    "models/props/rock_scatter/rock_scatter_pile_05.vmdl",
+    "models/props/rock_scatter/rock_scatter_pile_02.vmdl",
+    "models/props/rock_scatter/rock_scatter_pile_03.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 1,
+  "Jitter": 52.700012,
+  "FootprintRadius": 16.299995,
+  "CollisionRadius": 11.4999895,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "__references": [
+    "facepunch.rock_scatter_pile_01#47201",
+    "facepunch.rock_scatter_pile_02#47202",
+    "facepunch.rock_scatter_pile_03#47203",
+    "facepunch.rock_scatter_pile_05#47205"
+  ],
+  "__version": 0
+}

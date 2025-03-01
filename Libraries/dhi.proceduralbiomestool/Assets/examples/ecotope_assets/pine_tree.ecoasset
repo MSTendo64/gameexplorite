@@ -1,0 +1,13 @@
+{
+  "Models": [
+    "models/before/tree_pine/tree_pine.vmdl"
+  ],
+  "Viability": 3,
+  "FootprintRadius": 107.5,
+  "CollisionRadius": 12.399986,
+  "Jitter": 230.50005,
+  "__references": [
+    "garry.before_pinetree#1049"
+  ],
+  "__version": 0
+}

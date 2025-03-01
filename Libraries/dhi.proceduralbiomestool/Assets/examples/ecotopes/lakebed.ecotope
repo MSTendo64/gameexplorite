@@ -1,0 +1,64 @@
+{
+  "VisualizationColor": "0,0.01667,1,1",
+  "Density": 1,
+  "Layers": [
+    {
+      "LayerName": "Rocks",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/mossy_rock.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 6,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscPerlinDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 0.47,\r\n  \u0022NoiseFrequency\u0022: 0.05,\r\n  \u0022NoisePower\u0022: 1,\r\n  \u0022Guid\u0022: \u002272694960-2c8f-48b6-8882-9e196a4fbdd9\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 40,\r\n  \u0022Guid\u0022: \u0022a425298f-5a18-47c9-ad10-1cc367e282d9\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 0,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u002286d5af1c-9f8b-4901-a538-4b2645644ce1\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u00229f4aa658-10c3-4008-8a13-f548af2748aa\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u0022e9fa3111-47a3-430a-b7b8-fa85aa4c8e22\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsAboveHeightLayerRule",
+            "data": "{\r\n  \u0022Height\u0022: 800,\r\n  \u0022Guid\u0022: \u00225d3366dc-32f2-4cb1-97dd-65f859c4f084\u0022\r\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "count": 3,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u0022995ab0e2-dbac-47de-9e61-5b3ee33e823b\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u002240d8f813-5fe9-4407-9837-409eb366da1a\u0022\r\n}"
+      },
+      {
+        "type": "ApplyTagsGlobalRule",
+        "data": "{\r\n  \u0022Tags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u002213e33c01-7b7c-463b-9f99-fde557202226\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

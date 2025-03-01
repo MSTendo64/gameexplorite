@@ -1,0 +1,17 @@
+{
+  "Models": [
+    "skate6788/models/palma_01.vmdl",
+    "skate6788/models/palma_02.vmdl",
+    "skate6788/models/palma_04.vmdl"
+  ],
+  "Viability": 3,
+  "FootprintRadius": 307.80014,
+  "CollisionRadius": 26.400059,
+  "Jitter": 550.0999,
+  "__references": [
+    "throwupproducs.palma_01#38873",
+    "throwupproducs.palma_02#38874",
+    "throwupproducs.palma_04#38876"
+  ],
+  "__version": 0
+}

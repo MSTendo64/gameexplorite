@@ -1,0 +1,15 @@
+{
+  "AlbedoImage": "materials/dev/simple/simple_tile_color.png",
+  "RoughnessImage": "materials/dev/simple/simple_tile_rough.png",
+  "NormalImage": "materials/default/default_normal.tga",
+  "HeightImage": "materials/default/default_height.tga",
+  "AOImage": "materials/default/default_ao.tga",
+  "UVScale": 5,
+  "UVRotation": 0,
+  "Metalness": 0,
+  "NormalStrength": 1,
+  "HeightBlendStrength": 1,
+  "Surface": null,
+  "__references": [],
+  "__version": 0
+}

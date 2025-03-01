@@ -1,0 +1,34 @@
+{
+  "Models": [
+    "models/sbox_props/shrubs/pine/pine_bush_regular_c.vmdl",
+    "models/sbox_props/shrubs/pine/pine_bush_regular_b.vmdl",
+    "models/sbox_props/shrubs/pine/pine_bush_regular_a.vmdl"
+  ],
+  "Density": 0.06,
+  "Viability": 1,
+  "Jitter": 50.900005,
+  "FootprintRadius": 41.399975,
+  "CollisionRadius": 27.000004,
+  "ScaleRange": "2 2",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "MaximumTerrainGenerationAngle": 74.2,
+  "__references": [
+    "facepunch.pine_bush_regular_a#29107",
+    "facepunch.pine_bush_regular_b#29109",
+    "facepunch.pine_bush_regular_c#29108"
+  ],
+  "__version": 0
+}

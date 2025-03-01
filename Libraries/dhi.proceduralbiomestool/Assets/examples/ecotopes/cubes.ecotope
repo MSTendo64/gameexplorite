@@ -1,0 +1,56 @@
+{
+  "VisualizationColor": "0.98333,0,1,1",
+  "Density": 1,
+  "Layers": [
+    {
+      "LayerName": "Cubes",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/cube.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 4,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscPerlinDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 1,\r\n  \u0022NoiseFrequency\u0022: 0.02,\r\n  \u0022NoisePower\u0022: 1.5,\r\n  \u0022Guid\u0022: \u00228ba5a3e5-a89f-422b-878e-d4b32ad47630\u0022\r\n}"
+          },
+          {
+            "type": "AlignToPhysicsCollisionLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 1,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u002220537710-c509-4ac9-8a15-5252bf36a10c\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u0022d82a9bd5-9067-4fe1-9f27-ecff3a1ebc1a\u0022\r\n}"
+          },
+          {
+            "type": "ApplyNoiseTintLayerRule",
+            "data": "{\r\n  \u0022Tint\u0022: {\r\n    \u0022blend\u0022: \u0022Linear\u0022,\r\n    \u0022color\u0022: [\r\n      {\r\n        \u0022t\u0022: 0,\r\n        \u0022c\u0022: \u00221,0,0,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 0.17,\r\n        \u0022c\u0022: \u00221,0.49804,0,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 0.33,\r\n        \u0022c\u0022: \u00221,1,0,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 0.5,\r\n        \u0022c\u0022: \u00220,1,0,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 0.67,\r\n        \u0022c\u0022: \u00220,0,1,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 0.83,\r\n        \u0022c\u0022: \u00220.29412,0,0.5098,1\u0022\r\n      },\r\n      {\r\n        \u0022t\u0022: 1,\r\n        \u0022c\u0022: \u00220.5451,0,1,1\u0022\r\n      }\r\n    ],\r\n    \u0022alpha\u0022: [\r\n      {\r\n        \u0022t\u0022: 0,\r\n        \u0022a\u0022: 1\r\n      },\r\n      {\r\n        \u0022t\u0022: 1,\r\n        \u0022a\u0022: 1\r\n      }\r\n    ]\r\n  },\r\n  \u0022NoiseFrequency\u0022: 0.02,\r\n  \u0022NoisePower\u0022: 1.5,\r\n  \u0022Guid\u0022: \u002249b611c2-1918-4058-8252-a8d2956a353a\u0022\r\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "count": 3,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u00224f3a8c5c-6729-4cff-b166-15cb8c5f792a\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u0022d2d5ca80-86af-4f7c-8fd9-18bb2fc67178\u0022\r\n}"
+      },
+      {
+        "type": "ApplyTagsGlobalRule",
+        "data": "{\r\n  \u0022Tags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u002293ca6b51-e624-4a79-a1e8-861d853ac0d3\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

@@ -1,0 +1,13 @@
+{
+  "Models": [
+    "models/forest/house_4.vmdl"
+  ],
+  "Viability": 1,
+  "Jitter": 0,
+  "FootprintRadius": 627.8998,
+  "CollisionRadius": 261.80008,
+  "__references": [
+    "ambi.house_4#50791"
+  ],
+  "__version": 0
+}

@@ -71,7 +71,7 @@
         {
           "__type": "TreeSpanwer",
           "__guid": "7975ebe2-91dd-4794-a930-c0cf9e96ab46",
-          "maxTrees": 1000,
+          "maxTrees": 10,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -90,8 +90,13 @@
     {
       "__guid": "469ee94f-7b7d-447b-b5a9-1e6f78046c92",
       "Flags": 0,
+<<<<<<< Updated upstream
       "Name": "Generator",
       "Position": "-2081.292,-8587.132,-4808.287",
+=======
+      "Name": "Terrain",
+      "Position": "0,0,-7445.306",
+>>>>>>> Stashed changes
       "Enabled": true,
       "Components": [
         {
@@ -129,8 +134,46 @@
           "Storage": null,
           "Surface": null,
           "SurfaceVelocity": "0,0,0",
+<<<<<<< Updated upstream
           "TerrainHeight": 0,
           "TerrainSize": 0
+=======
+          "TerrainHeight": 10000,
+          "TerrainSize": 79872
+        },
+        {
+          "__type": "ProceduralBiomesTool.Components.TerrainBiomesComponent",
+          "__guid": "8e3ca48e-b7a9-41cb-827b-d50154156fab",
+          "BiomeTypeMapBase64": "",
+          "DrawExtents": false,
+          "DrawTiles": false,
+          "Ecotopes": [
+            {
+              "Value": 1,
+              "Resource": "new ecotope.ecotope",
+              "IsValid": true
+            }
+          ],
+          "GeneratedBiomesObject": {
+            "_type": "gameobject",
+            "go": "41177a23-b315-4883-ac54-423779845b5a"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Resolution": 2048,
+          "Seed": 964759752,
+          "Terrain": {
+            "_type": "component",
+            "component_id": "bf3a7334-fa9f-4e02-b32c-747f5c834ffc",
+            "go": "41177a23-b315-4883-ac54-423779845b5a",
+            "component_type": "Terrain"
+          },
+          "Tiles": "20,20"
+>>>>>>> Stashed changes
         }
       ]
     },
@@ -144,6 +187,8 @@
         {
           "__type": "PlayerSpawn",
           "__guid": "ffaba0b0-89e6-4e4e-b36b-2ddd63265eef",
+          "__enabled": false,
+          "mapSize": 79872,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -151,6 +196,113 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "PlayerPrefab": "prefabs/player/player controller.prefab"
+        }
+      ]
+    },
+    {
+      "__guid": "f23b7561-8171-4fc8-a105-ad287688e328",
+      "Flags": 0,
+      "Name": "NETHelper",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "79f5424d-22da-4aba-866a-970f4b6f22af",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "player controller.prefab"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "8147db1d-4c88-4fd8-8d57-3bab2e4a32bb"
+            }
+          ],
+          "StartServer": true
+        }
+      ]
+    },
+    {
+      "__guid": "8147db1d-4c88-4fd8-8d57-3bab2e4a32bb",
+      "Flags": 0,
+      "Name": "PlayerSPawn1",
+      "Position": "8303.077,13263.58,3815.677",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "RandomPos",
+          "__guid": "0d0eb0e0-de96-41af-8088-e3c27f9961c4",
+          "mapSize": 79872,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ]
+    },
+    {
+      "__guid": "81d9b114-d689-4846-afb8-97415238e8dc",
+      "Flags": 0,
+      "Name": "[Generated] Terrain Biomes",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ProceduralBiomesTool.Components.TerrainBiomeGeneratedObjects",
+          "__guid": "bfa071cb-cfec-443d-8c2a-5194e2b53f01",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "TileStorageGameObjects": {}
+        }
+      ]
+    },
+    {
+      "__guid": "e3868667-18c7-4838-8db9-d25256c40555",
+      "Flags": 0,
+      "Name": "Object",
+      "Position": "1563.48,5522.246,-887.2725",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CrosshairBuilder",
+          "__guid": "ef922ea7-8c49-4ad1-843d-2de82819f7d5",
+          "CenterDot": true,
+          "CenterDotOpacity": 1,
+          "CenterDotThickness": 1,
+          "Code": null,
+          "Color": "0.18039,1,0,1",
+          "InnerLineLenght": 10,
+          "InnerLineOpacity": 1,
+          "InnerLinesOffset": 2,
+          "InnerLineThickness": 1,
+          "IsPercentage": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OuterLineLenght": 0,
+          "OuterLineOffset": 0,
+          "OuterLineOpacity": 0.5,
+          "OuterLineThickness": 0,
+          "Outline": true,
+          "OutlineOpacity": 1,
+          "OutlineThickness": 2,
+          "Position": "50,50",
+          "ShowInnerLines": true,
+          "ShowOuterLines": false
         }
       ]
     }

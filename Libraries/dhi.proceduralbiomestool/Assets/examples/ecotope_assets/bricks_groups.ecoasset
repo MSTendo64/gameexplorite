@@ -1,0 +1,17 @@
+{
+  "Models": [
+    "models/props/brick_single/brick_scatter_04.vmdl",
+    "models/props/brick_single/brick_scatter_02.vmdl",
+    "models/props/brick_single/brick_scatter_01.vmdl"
+  ],
+  "Viability": 1,
+  "Jitter": 96.899994,
+  "FootprintRadius": 47.1,
+  "CollisionRadius": 30.600008,
+  "__references": [
+    "facepunch.brick_scatter_01#47563",
+    "facepunch.brick_scatter_02#47564",
+    "facepunch.brick_scatter_04#47566"
+  ],
+  "__version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "Models": [
+    "models/dev/box.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 1,
+  "Jitter": 59.599995,
+  "FootprintRadius": 36.79999,
+  "CollisionRadius": 25.100008,
+  "__references": [],
+  "__version": 0
+}

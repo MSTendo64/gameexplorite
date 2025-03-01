@@ -1,0 +1,64 @@
+{
+  "VisualizationColor": "0.36279,0.30728,0.29192,1",
+  "Density": 1,
+  "Layers": [
+    {
+      "LayerName": "Buildings",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/city_building.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 6,
+        "rules": [
+          {
+            "type": "GenerateGridDistributionLayerRule",
+            "data": "{\r\n  \u0022SpacingMultiplier\u0022: \u00221,1\u0022,\r\n  \u0022AllowJitter\u0022: false,\r\n  \u0022Guid\u0022: \u0022cfeee4cb-b052-47ac-9383-0031834193c6\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 40,\r\n  \u0022Guid\u0022: \u0022f16f3b85-2dcc-497d-972e-6edec7872477\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 0,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u002264a6071f-6167-4410-9250-7f7917a4dd24\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u00226836193a-1fea-471c-96cd-238628fa153e\u0022\r\n}"
+          },
+          {
+            "type": "ApplyNoiseYawLayerRule",
+            "data": "{\r\n  \u0022NoiseFrequency\u0022: 1,\r\n  \u0022NoisePower\u0022: 1,\r\n  \u0022Guid\u0022: \u0022642342e3-20a0-43a2-9be2-8d6f8d3b6201\u0022\r\n}"
+          },
+          {
+            "type": "RoundYawLayerRule",
+            "data": "{\r\n  \u0022RoundToNearest\u0022: 90,\r\n  \u0022Guid\u0022: \u00220b93f449-b05c-4ed7-921f-26039fcf5264\u0022\r\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "count": 3,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u002290f2cc0f-1f34-4a56-b1da-c98eac2447a1\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u002230d11b3e-f97e-498d-8da2-e8b25c959c88\u0022\r\n}"
+      },
+      {
+        "type": "ApplyTagsGlobalRule",
+        "data": "{\r\n  \u0022Tags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u00229fba9f4f-a73f-4e4b-860a-80d72a6786c9\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

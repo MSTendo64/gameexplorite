@@ -1,0 +1,18 @@
+{
+  "Models": [
+    "models/sbox_props/nature/grass_clumps/grass_clump_a.vmdl",
+    "models/sbox_props/nature/grass_clumps/grass_clump_b.vmdl",
+    "models/sbox_props/nature/grass_clumps/grass_clump_c.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 3,
+  "Jitter": 77.900024,
+  "FootprintRadius": 45.500046,
+  "CollisionRadius": 36.899994,
+  "__references": [
+    "facepunch.grass_clump_a#47110",
+    "facepunch.grass_clump_b#29063",
+    "facepunch.grass_clump_c#29064"
+  ],
+  "__version": 0
+}

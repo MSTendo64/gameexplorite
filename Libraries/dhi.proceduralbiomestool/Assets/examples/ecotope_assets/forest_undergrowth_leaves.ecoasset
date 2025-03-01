@@ -1,0 +1,33 @@
+{
+  "Models": [
+    "models/sbox_props/leaves_scatter/leaves_scatter_pile_a5.vmdl",
+    "models/sbox_props/leaves_scatter/leaves_scatter_pile_a2.vmdl",
+    "models/sbox_props/leaves_scatter/leaves_scatter_pile_a1.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 2,
+  "Jitter": 42.90002,
+  "FootprintRadius": 32.69999,
+  "CollisionRadius": 16.099989,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "__references": [
+    "facepunch.leaves_pile_a1#56176",
+    "facepunch.leaves_pile_a2#56177",
+    "facepunch.leaves_pile_a5#56180"
+  ],
+  "__version": 0
+}

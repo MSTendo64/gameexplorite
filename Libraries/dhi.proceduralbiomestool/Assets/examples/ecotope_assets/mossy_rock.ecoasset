@@ -1,0 +1,23 @@
+{
+  "Models": [
+    "models/rock_moss_set_02/rock_moss_02g.vmdl",
+    "models/rock_moss_set_02/rock_moss_02f.vmdl",
+    "models/rock_moss_set_02/rock_moss_02e.vmdl",
+    "models/rock_moss_set_02/rock_moss_02d.vmdl",
+    "models/rock_moss_set_02/rock_moss_02c.vmdl",
+    "models/rock_moss_set_02/rock_moss_02a.vmdl"
+  ],
+  "Viability": 1,
+  "Jitter": 215.90009,
+  "FootprintRadius": 52.599995,
+  "CollisionRadius": 27.400015,
+  "__references": [
+    "polyhaven.rock_moss_02a#20425",
+    "polyhaven.rock_moss_02c#20427",
+    "polyhaven.rock_moss_02d#20428",
+    "polyhaven.rock_moss_02e#20429",
+    "polyhaven.rock_moss_02f#20430",
+    "polyhaven.rock_moss_02g#20431"
+  ],
+  "__version": 0
+}

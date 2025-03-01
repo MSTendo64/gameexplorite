@@ -1,0 +1,106 @@
+{
+  "VisualizationColor": "0.49302,0.49302,0.49302,1",
+  "Density": 1,
+  "Layers": [
+    {
+      "LayerName": "Boulders",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/mossy_rock.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 6,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 0.2,\r\n  \u0022Guid\u0022: \u00229a39fa52-e455-49fb-a912-cafd79a8aa3a\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 40,\r\n  \u0022Guid\u0022: \u0022c0ee936f-4e95-4607-a257-623d24ae017d\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomScaleLayerRule",
+            "data": "{\r\n  \u0022ScaleRange\u0022: \u00221.5 2\u0022,\r\n  \u0022Guid\u0022: \u0022f8d2ed84-0878-40be-8806-7596845a808a\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 0,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u0022d4549f26-db84-467b-8f95-28834ff4cb35\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u00224368865e-4f9a-4e8f-b077-d07b0210a831\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u0022b7c795e3-b899-4a09-90c4-d90f9860d3b0\u0022\r\n}"
+          }
+        ]
+      }
+    },
+    {
+      "LayerName": "Grass",
+      "Assets": [
+        {
+          "Asset": "examples/ecotope_assets/field_grass.ecoasset",
+          "Density": 1
+        },
+        {
+          "Asset": "examples/ecotope_assets/field_clover.ecoasset",
+          "Density": 1
+        },
+        {
+          "Asset": "examples/ecotope_assets/forest_undergrowth_flowers.ecoasset",
+          "Density": 1
+        }
+      ],
+      "Rules": {
+        "count": 5,
+        "rules": [
+          {
+            "type": "GeneratePoissonDiscDistributionLayerRule",
+            "data": "{\r\n  \u0022Density\u0022: 1,\r\n  \u0022Guid\u0022: \u00228ae51706-12fa-493b-9db8-cd5d1d7fea5b\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsOnInvalidTerrainLayerRule",
+            "data": "{\r\n  \u0022MinValidAngle\u0022: 0,\r\n  \u0022MaxValidAngle\u0022: 40,\r\n  \u0022Guid\u0022: \u0022b119ac6b-cf6a-4825-b5a0-b5278e0db5e8\u0022\r\n}"
+          },
+          {
+            "type": "AlignToTerrainLayerRule",
+            "data": "{\r\n  \u0022MinAngleInfluence\u0022: 0,\r\n  \u0022MaxAngleInfluence\u0022: 1,\r\n  \u0022Guid\u0022: \u00225365ed0f-7c11-480e-b058-b6bc3a1e4472\u0022\r\n}"
+          },
+          {
+            "type": "ApplyRandomYawLayerRule",
+            "data": "{\r\n  \u0022Guid\u0022: \u0022afb53cb2-8dd5-4a68-b5ca-72f13b37cbb9\u0022\r\n}"
+          },
+          {
+            "type": "RemovePointsTouchingCollisionLayerRule",
+            "data": "{\r\n  \u0022WithAnyTags\u0022: \u0022\u0022,\r\n  \u0022WithAllTags\u0022: \u0022\u0022,\r\n  \u0022WithoutTags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u0022721f6fa0-6fd3-412e-8ffe-676dd2512a1b\u0022\r\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "count": 3,
+    "rules": [
+      {
+        "type": "RemoveOverlappingFootprintsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u00229feb117a-c92a-4b87-91c8-17e6de18642d\u0022\r\n}"
+      },
+      {
+        "type": "RemoveCollidingObjectsGlobalRule",
+        "data": "{\r\n  \u0022Guid\u0022: \u00220d2d96f7-974f-4c3b-bde2-5e5a36e65548\u0022\r\n}"
+      },
+      {
+        "type": "ApplyTagsGlobalRule",
+        "data": "{\r\n  \u0022Tags\u0022: \u0022generated\u0022,\r\n  \u0022Guid\u0022: \u0022838e932f-ecc0-482c-a5bc-355894c02aa5\u0022\r\n}"
+      }
+    ]
+  },
+  "HandledPostCreationSetup": true,
+  "__references": [],
+  "__version": 0
+}

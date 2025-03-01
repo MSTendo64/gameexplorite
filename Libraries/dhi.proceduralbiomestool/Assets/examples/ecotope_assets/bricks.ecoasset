@@ -1,0 +1,22 @@
+{
+  "Models": [
+    "models/props/brick_single/brick_single_01.vmdl",
+    "models/props/brick_single/brick_single_03.vmdl",
+    "models/props/brick_single/brick_single_02.vmdl",
+    "models/props/brick_single/brick_single_05.vmdl",
+    "models/props/brick_single/brick_single_04.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 1,
+  "Jitter": 18.700003,
+  "FootprintRadius": 6.399999,
+  "CollisionRadius": 6.000001,
+  "__references": [
+    "facepunch.brick_single_01#47570",
+    "facepunch.brick_single_02#47571",
+    "facepunch.brick_single_03#47572",
+    "facepunch.brick_single_04#47573",
+    "facepunch.brick_single_05#47574"
+  ],
+  "__version": 0
+}

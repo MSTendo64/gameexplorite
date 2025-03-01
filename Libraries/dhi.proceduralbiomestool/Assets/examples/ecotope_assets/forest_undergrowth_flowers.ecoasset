@@ -1,0 +1,33 @@
+{
+  "Models": [
+    "models/props/nature/flowers_01/summer_flowers_03.vmdl",
+    "models/props/nature/flowers_01/summer_flowers_04.vmdl",
+    "models/props/nature/flowers_01/summer_flowers_01.vmdl"
+  ],
+  "Density": 1,
+  "Viability": 3,
+  "Jitter": 64.09999,
+  "FootprintRadius": 46.8,
+  "CollisionRadius": 14.899996,
+  "ScaleRange": "0.9 1.1",
+  "Tint": {
+    "blend": "Linear",
+    "color": [
+      {
+        "t": 0,
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 1,
+        "c": "1,1,1,1"
+      }
+    ],
+    "alpha": null
+  },
+  "__references": [
+    "facepunch.summer_flowers_01#47032",
+    "facepunch.summer_flowers_03#47034",
+    "facepunch.summer_flowers_04#47035"
+  ],
+  "__version": 0
+}
