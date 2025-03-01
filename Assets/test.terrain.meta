@@ -1,0 +1,20 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Test",
+      "Type": "terrain",
+      "Org": "local",
+      "Ident": "test",
+      "Schema": 0,
+      "IncludeSourceFiles": true,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "test.terrain"
+      }
+    }
+  }
+}

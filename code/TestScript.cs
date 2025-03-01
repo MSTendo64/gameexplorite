@@ -8,39 +8,17 @@ using Sandbox.Utility;
 public sealed class TestScript : Component
 {
 	private Logger logger = new Logger("Terrain Logger");
-	private TypeDescription typeDescription;
-	private int HMSize;
-
 	private ushort[] hmData;
 
-	[Property] List<TerrainMaterial> NewTerrMat;
 
     protected override void OnAwake()
     {
-		if ( FileSystem.Mounted.FileExists( "4x4-mountains.raw" ) )
-		{
-			byte[] heightmapData = FileSystem.Mounted.ReadAllBytes( "4x4-mountains.raw" ).ToArray();
-			HMSize = heightmapData.Length;
-			logger.Info( $"Loaded heightmap with {heightmapData.Length} bytes." );
-
-			hmData = GenerateHeightMap( heightmapData.Length );
+		
+		
+			hmData = GenHMPerlin( 2048*2048, 2048);
 
 			Terrain terrainComp = this.GetComponent<Terrain>();
-
-			try
-			{
-				terrainComp.Storage.HeightMap = hmData;
-			}
-			catch ( Exception ex )
-			{
-				logger.Info( ex );
-			}
-
-		}
-		else
-		{
-			logger.Warning( "Heightmap file not found in Mounted FileSystem." );
-		}
+			terrainComp.Storage.HeightMap = hmData;
 
 	}
 
@@ -69,30 +47,42 @@ public sealed class TestScript : Component
 
 	private ushort[] GenerateHeightMap(int size )
 	{
-		ushort[] heightmapDataRaw = new ushort[size];
+		ushort[] heightmapDataRaw = new ushort[size*size];
 
 		for ( int i = 0; i < size; i++ )
 		{
-			heightmapDataRaw[i] = (ushort)new Random().Int(180);
+			heightmapDataRaw[i] = (ushort)new Random().Int(80);
 		}
 
 		return heightmapDataRaw;
 	}
 
-	private ushort[] GenHMPerlin(int size )
+	private ushort[] GenHMPerlin(int len, int size )
 	{
-		ushort[] heightmapDataRaw = new ushort[size * size];
+		ushort[] heightmapDataRaw = new ushort[len];
 		int x = 0, y = 0;
 
 		try {
 
-			INoiseField noise = Noise.PerlinField( new Noise.FractalParameters() );
-
-			for ( x = 0; x < size; x++ )
+			//INoiseField noise = Noise.PerlinField( new Noise.FractalParameters() );
+			for ( y = 0; y < size; y++ )	
 			{
-				for ( y = 0; y < size; y++ )
+				for ( x = 0; x < size; x++ )
 				{
-					heightmapDataRaw[XYToIndex( x, y, size )] = (ushort)(noise.Sample( new Vector2( x, y ) ) * 100);
+					heightmapDataRaw[XYToIndex( y, x, size )] = (ushort)(Noise.Fbm( 4, x, y, 0 ) * 65000  );
+					////heightmapDataRaw[XYToIndex( y, x, size )] = (ushort)((Noise.Fbm( 4, x, y,0) * 0.5f + 0.5f) * 6500);
+					//if ( x > size / 2 )
+					//{
+					//	heightmapDataRaw[XYToIndex( y, x, size )] = (ushort)((Noise.Fbm( 4, x, y, 0 ) * 0.5f + 0.5f) * 65000);
+					//												//(ushort)((Noise.Fbm( 4, x, y, 0 ) * 0.5f + 0.5f) * 6000);
+					//}
+					//else
+					//{
+					//	heightmapDataRaw[XYToIndex( y, x, size )] = (ushort)((Noise.Fbm( 4, x, y, 0 ) * 0.5f + 0.5f) * 65000*(1-x/size/2));
+
+					//}
+					//heightmapDataRaw[XYToIndex( y, x, 1024 )] = (ushort)((Noise.Perlin(x, y ) * 0.5f + 0.5f) * 6500);
+					//heightmapDataRaw[XYToIndex( x, y, size )] = (ushort)(noise.Sample( new Vector2( x, y ) ) * 100);
 				}
 			}
 
