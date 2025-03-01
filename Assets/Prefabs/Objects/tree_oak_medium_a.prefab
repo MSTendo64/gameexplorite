@@ -1,0 +1,39 @@
+{
+  "RootObject": {
+    "__guid": "ed5fc57d-bd99-479f-8c67-36515e74533a",
+    "Flags": 0,
+    "Name": "tree_oak_medium_a",
+    "Position": "1877.841,2958.188,-211.7807",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "d439ea80-e6b3-4664-bcc5-70695ceec262",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "MaterialGroup": null,
+        "Model": "models/sbox_props/trees/oak/tree_oak_medium_a.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnPropBreak": null,
+        "OnPropTakeDamage": null,
+        "StartAsleep": false,
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.tree_oak_medium_a#33692"
+  ],
+  "__version": 1
+}

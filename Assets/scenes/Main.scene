@@ -114,15 +114,37 @@
       ]
     },
     {
-      "__guid": "d9b61d61-f12d-4303-aa61-218891aa690f",
+      "__guid": "936bab27-c2a5-463e-be8a-91f6d6553e5b",
+      "Flags": 0,
+      "Name": "Tree Spawner",
+      "Position": "0,-177.7726,-141.1883",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "TreeSpanwer",
+          "__guid": "7975ebe2-91dd-4794-a930-c0cf9e96ab46",
+          "maxTrees": 1000,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "terrainSize": 79872,
+          "trees": null
+        }
+      ]
+    },
+    {
+      "__guid": "2ccbb2f1-a14e-439f-b941-bb5f25cebc8a",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "0,0,32.4802",
+      "Position": "345.5999,251.6754,158.5332",
       "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.PlayerController",
-          "__guid": "45c31775-ea85-427d-b85f-becab6e253b2",
+          "__guid": "45908fdc-05a3-4003-8a59-995174dfefe1",
           "AccelerationTime": 0,
           "AimStrengthBody": 1,
           "AimStrengthEyes": 1,
@@ -130,8 +152,8 @@
           "AltMoveButton": "run",
           "Body": {
             "_type": "component",
-            "component_id": "3a4aa290-abd2-4e4d-b7b3-48d535873e41",
-            "go": "d9b61d61-f12d-4303-aa61-218891aa690f",
+            "component_id": "c01c433e-a50b-4fe9-82a4-79cd6b521211",
+            "go": "2ccbb2f1-a14e-439f-b941-bb5f25cebc8a",
             "component_type": "Rigidbody"
           },
           "BodyCollisionTags": null,
@@ -142,7 +164,7 @@
           "CameraOffset": "256,0,12",
           "ColliderObject": {
             "_type": "gameobject",
-            "go": "2f64c8e9-cc84-4a31-a3c2-b9317e6befab"
+            "go": "36c28dcc-8995-4ab4-be29-765fb1f4fc0f"
           },
           "DeaccelerationTime": 0,
           "DuckedHeight": 36,
@@ -168,8 +190,8 @@
           "ReachLength": 130,
           "Renderer": {
             "_type": "component",
-            "component_id": "007b9668-59c7-408c-8d0f-32ac3930792c",
-            "go": "94115569-c38b-4ca6-a021-08a02e148be5",
+            "component_id": "7c816a28-7252-486d-b4bb-7f62aadc1ce1",
+            "go": "17076fe7-8e17-4369-8e4a-b871980c1832",
             "component_type": "SkinnedModelRenderer"
           },
           "RotateWithGround": true,
@@ -191,7 +213,7 @@
         },
         {
           "__type": "Sandbox.Rigidbody",
-          "__guid": "3a4aa290-abd2-4e4d-b7b3-48d535873e41",
+          "__guid": "c01c433e-a50b-4fe9-82a4-79cd6b521211",
           "AngularDamping": 1,
           "Gravity": true,
           "LinearDamping": 0.1,
@@ -218,7 +240,7 @@
         },
         {
           "__type": "Sandbox.Movement.MoveModeWalk",
-          "__guid": "d1714b2f-b554-428e-9c56-8e0ee38ec824",
+          "__guid": "c09854a9-1717-44b5-a09f-a37e413accd7",
           "GroundAngle": 45,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -232,7 +254,7 @@
         },
         {
           "__type": "Sandbox.Movement.MoveModeSwim",
-          "__guid": "efafabf2-0318-458c-9c46-05821d86b4ac",
+          "__guid": "4a6a9881-540d-449d-a484-53cc93d116f4",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -244,7 +266,7 @@
         },
         {
           "__type": "Sandbox.Movement.MoveModeLadder",
-          "__guid": "45a65ba0-b7c2-4d36-8288-e26822db3a63",
+          "__guid": "252d9634-d213-4d9b-9a86-7435eec94986",
           "ClimbableTags": "ladder",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -258,14 +280,14 @@
       ],
       "Children": [
         {
-          "__guid": "94115569-c38b-4ca6-a021-08a02e148be5",
+          "__guid": "17076fe7-8e17-4369-8e4a-b871980c1832",
           "Flags": 0,
           "Name": "Body",
           "Enabled": true,
           "Components": [
             {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "007b9668-59c7-408c-8d0f-32ac3930792c",
+              "__guid": "7c816a28-7252-486d-b4bb-7f62aadc1ce1",
               "AnimationGraph": null,
               "BodyGroups": 341,
               "BoneMergeTarget": null,
@@ -305,14 +327,14 @@
           ]
         },
         {
-          "__guid": "2f64c8e9-cc84-4a31-a3c2-b9317e6befab",
+          "__guid": "36c28dcc-8995-4ab4-be29-765fb1f4fc0f",
           "Flags": 1,
           "Name": "Colliders",
           "Enabled": true,
           "Components": [
             {
               "__type": "Sandbox.CapsuleCollider",
-              "__guid": "83645509-a0e6-40e3-a94a-565f5e328447",
+              "__guid": "6923dc8d-ac5a-4a84-bcba-e9aa8d413fe8",
               "End": "0,0,45.05097",
               "Friction": 0,
               "IsTrigger": false,
@@ -334,7 +356,7 @@
             },
             {
               "__type": "Sandbox.BoxCollider",
-              "__guid": "9594e58f-f39a-4071-bd82-ec6893bc36f7",
+              "__guid": "ff4afe5a-f52e-4b8a-9e7f-5b32ca3f6d9c",
               "Center": "0,0,18",
               "Friction": 0,
               "IsTrigger": false,

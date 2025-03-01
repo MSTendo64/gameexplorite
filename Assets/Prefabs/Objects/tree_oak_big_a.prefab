@@ -1,0 +1,39 @@
+{
+  "RootObject": {
+    "__guid": "cdd8a7f4-aba6-4cc7-810f-9bfcf85c19fe",
+    "Flags": 0,
+    "Name": "tree_oak_big_a",
+    "Position": "2687.884,2951.269,83.96838",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "ac968230-d777-4063-8c90-3545bcfbc33f",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "MaterialGroup": null,
+        "Model": "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnPropBreak": null,
+        "OnPropTakeDamage": null,
+        "StartAsleep": false,
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.tree_oak_big_a#38050"
+  ],
+  "__version": 1
+}
