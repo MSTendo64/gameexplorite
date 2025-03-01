@@ -159,11 +159,10 @@ public sealed class TestScript : Component
 	private int HMSize;
 
 	private ushort[] hmData;
-	private ushort[] hmData;
 
 
-    protected override void OnAwake()
-    {
+	protected override void OnAwake()
+	{
 		if ( FileSystem.Mounted.FileExists( "4x4-mountains.raw" ) )
 		{
 			byte[] heightmapData = FileSystem.Mounted.ReadAllBytes( "4x4-mountains.raw" ).ToArray();
@@ -183,6 +182,7 @@ public sealed class TestScript : Component
 				logger.Info( ex );
 			}
 
+		}
 	}
 
     protected override void OnStart()
