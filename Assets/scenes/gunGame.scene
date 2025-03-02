@@ -852,14 +852,6 @@
       "Tags": "player",
       "__Prefab": "prefabs/player.prefab",
       "__PrefabVariables": {}
-    },
-    {
-      "__guid": "ab376eda-72e7-4101-ba23-d235d82fe3c4",
-      "Flags": 0,
-      "Name": "Player",
-      "Tags": "player",
-      "__Prefab": "prefabs/player.prefab",
-      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
