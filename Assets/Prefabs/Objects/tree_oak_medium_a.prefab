@@ -32,8 +32,6 @@
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
-  "__references": [
-    "facepunch.tree_oak_medium_a#33692"
-  ],
+  "__references": [],
   "__version": 1
 }

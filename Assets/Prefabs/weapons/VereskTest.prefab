@@ -200,8 +200,7 @@
   "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [
-    "greg.v_h1_ak47#36812",
-    "greg.w_h1_ak47#35637"
+    "greg.v_h1_ak47#36812"
   ],
   "__version": 1
 }
