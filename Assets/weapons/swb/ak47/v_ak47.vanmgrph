@@ -15,7 +15,7 @@
 				{
 					_class = "CRootAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ 208.0, -16.0 ]
+					m_vecPosition = [ 224.0, -9.0 ]
 					m_nNodeID = 
 					{
 						m_id = 206872258
@@ -37,13 +37,34 @@
 			{
 				key = 
 				{
+					m_id = 337151049
+				}
+				value = 
+				{
+					_class = "CSequenceAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -672.0, -240.0 ]
+					m_nNodeID = 
+					{
+						m_id = 337151049
+					}
+					m_sNote = ""
+					m_tagSpans = [  ]
+					m_sequenceName = "fire"
+					m_playbackSpeed = 1.0
+					m_bLoop = false
+				}
+			},
+			{
+				key = 
+				{
 					m_id = 577670065
 				}
 				value = 
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -496.0, -16.0 ]
+					m_vecPosition = [ -736.0, 0.0 ]
 					m_nNodeID = 
 					{
 						m_id = 577670065
@@ -71,7 +92,7 @@
 					}
 					m_sNote = ""
 					m_tagSpans = [  ]
-					m_sequenceName = "reload"
+					m_sequenceName = "reload_empty"
 					m_playbackSpeed = 1.0
 					m_bLoop = false
 				}
@@ -85,7 +106,7 @@
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -624.0, -112.0 ]
+					m_vecPosition = [ -640.0, -112.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1421775535
@@ -106,7 +127,7 @@
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -656.0, -240.0 ]
+					m_vecPosition = [ -224.0, -16.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1565102395
@@ -148,7 +169,7 @@
 				{
 					_class = "CStateMachineAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -160.0, -240.0 ]
+					m_vecPosition = [ -121.0, -269.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1714022296
@@ -691,7 +712,7 @@
 							{
 								m_nodeID = 
 								{
-									m_id = 1565102395
+									m_id = 337151049
 								}
 								m_outputID = 
 								{
@@ -844,13 +865,13 @@
 	}
 	m_previewModels = 
 	[
-		"weapons/swb/scarh/v_scarh.vmdl",
+		"models/v_h1_ak47.vmdl",
 	]
 	m_boneMergeModels = [  ]
 	m_cameraSettings = 
 	{
 		m_flFov = 60.0
-		m_sLockBoneName = "camera"
+		m_sLockBoneName = "j_gun"
 		m_bLockCamera = false
 		m_bViewModelCamera = false
 	}

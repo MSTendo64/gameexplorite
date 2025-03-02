@@ -682,7 +682,7 @@
       "__guid": "8b3cd142-6acb-47f1-b4e0-6b00f75f7355",
       "Flags": 0,
       "Name": "WeaponRegistry",
-      "Position": "94.58017,127.1334,73.5171",
+      "Scale": "0.5,0.5,0.5",
       "Enabled": true,
       "NetworkMode": 1,
       "NetworkInterpolation": false,
@@ -725,6 +725,10 @@
             {
               "_type": "gameobject",
               "prefab": "prefabs/weapons/veresk.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/weapons/m700.prefab"
             }
           ]
         },

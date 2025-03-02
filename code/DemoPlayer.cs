@@ -46,6 +46,7 @@ public class DemoPlayer : PlayerBase
 		GiveWeapon( "swb_scarh", true );
 		GiveWeapon( "swb_l96a1" );
 		GiveWeapon("swb_ak47");
+		GiveWeapon( "swb_knife" );
 	}
 
 	public override void OnDeath( Shared.DamageInfo info )
