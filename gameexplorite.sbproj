@@ -1,7 +1,7 @@
 {
   "Title": "gameExplorite",
   "Type": "game",
-  "Org": "local",
+  "Org": "eventshock",
   "Ident": "gameexplorite",
   "Schema": 1,
   "IncludeSourceFiles": false,

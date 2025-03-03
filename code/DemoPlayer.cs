@@ -39,14 +39,15 @@ public class DemoPlayer : PlayerBase
 		if ( IsBot ) return;
 
 		// Give weapons
-		GiveWeapon( "swb_colt" );
-		GiveWeapon( "swb_revolver" );
-		GiveWeapon( "swb_remington" );
-		GiveWeapon( "swb_veresk" );
-		GiveWeapon( "swb_scarh", true );
-		GiveWeapon( "swb_l96a1" );
-		GiveWeapon("swb_ak47");
-		GiveWeapon( "swb_knife" );
+		GiveWeapon( "swb_melee", true );
+		//GiveWeapon( "swb_colt" );
+		//GiveWeapon( "swb_revolver" );
+		//GiveWeapon( "swb_remington" );
+		//GiveWeapon( "swb_veresk" );
+		//GiveWeapon( "swb_scarh", true );
+		//GiveWeapon( "swb_l96a1" );
+		//GiveWeapon("swb_ak47");
+		//GiveWeapon( "swb_knife" );
 	}
 
 	public override void OnDeath( Shared.DamageInfo info )

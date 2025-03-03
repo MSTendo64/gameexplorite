@@ -682,7 +682,6 @@
       "__guid": "8b3cd142-6acb-47f1-b4e0-6b00f75f7355",
       "Flags": 0,
       "Name": "WeaponRegistry",
-      "Scale": "0.5,0.5,0.5",
       "Enabled": true,
       "NetworkMode": 1,
       "NetworkInterpolation": false,
@@ -729,6 +728,14 @@
             {
               "_type": "gameobject",
               "prefab": "prefabs/weapons/m700.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/weapons/knife.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/weapons/melee.prefab"
             }
           ]
         },
@@ -846,6 +853,112 @@
           "Enabled": true,
           "__Prefab": "prefabs/weapons/veresk.prefab",
           "__PrefabVariables": {}
+        }
+      ]
+    },
+    {
+      "__guid": "4369efb7-1a47-40db-a441-86208c759ec0",
+      "Flags": 0,
+      "Name": "Player",
+      "Tags": "player",
+      "__Prefab": "prefabs/player.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "20eba8d9-a2b5-421e-a439-19b136dabe90",
+      "Flags": 0,
+      "Name": "w_colt",
+      "Position": "-595.3273,-681.4053,393.962",
+      "Rotation": "0.1690671,0.6865995,0.6866271,0.1689402",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "758f9450-0316-4f94-9ce9-e630f4acbb86",
+          "BodyGroups": 169,
+          "Health": 0,
+          "IsStatic": false,
+          "MaterialGroup": null,
+          "Model": "weapons/swb/colt/w_colt.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "c23a4e53-ea69-4198-93b0-991aa5cb508c",
+          "Center": "3.811934,0.319838,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "17.62386,1.825736,10",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "WorldWeapon",
+          "__guid": "ffecdcf6-7832-42ce-a9fc-91a34658af2a",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "weaponName": "swb_colt"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "24492641-0562-401b-93c3-08efee5a638b",
+          "Center": "3.811934,0.2681386,-0.1245656",
+          "Friction": null,
+          "IsTrigger": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": {
+            "__version": 9,
+            "__guid": "33814097-0a48-4768-afdc-79018bcea88c",
+            "__changeId": 1,
+            "UserData": {
+              "Title": "On Collider Enter"
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              }
+            ],
+            "Links": []
+          },
+          "OnTriggerExit": null,
+          "Scale": "17.62386,4.502388,13.1617",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
         }
       ]
     }

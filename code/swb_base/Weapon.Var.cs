@@ -1,4 +1,5 @@
 ﻿using Sandbox.Citizen;
+using SWB.Player;
 
 namespace SWB.Base;
 
